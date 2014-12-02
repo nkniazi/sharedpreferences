@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/btnLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Load" />
+
+    <Button
+        android:id="@+id/btnPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnLoad"
+        android:layout_alignBottom="@+id/btnLoad"
+        android:layout_centerHorizontal="true"
+        android:text="Previous" />
+
+    <TextView
+        android:id="@+id/tvUserName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnLoad"
+        android:layout_below="@+id/btnLoad"
+        android:layout_marginTop="33dp"
+        android:text="User Name" />
+
+    <EditText
+        android:id="@+id/txtUserName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnPrevious"
+        android:layout_alignTop="@+id/tvUserName2"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvPassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tvUserName2"
+        android:layout_below="@+id/txtUserName2"
+        android:layout_marginTop="40dp"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/txtPassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvPassword2"
+        android:layout_alignBottom="@+id/tvPassword2"
+        android:layout_alignLeft="@+id/txtUserName2"
+        android:layout_marginLeft="24dp"
+        android:ems="10" />
+
+</RelativeLayout>
