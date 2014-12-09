@@ -55,7 +55,7 @@
         android:layout_alignLeft="@+id/tvPassword"
         android:layout_below="@+id/txtPassword"
         android:layout_marginTop="20dp"
-        android:text="Save" />
+        android:text="Add User" />
 
     <Button
         android:id="@+id/btnGoToB"
